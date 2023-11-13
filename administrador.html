@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    
+<head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, inicial-scale=1">
+    <title>Control Parental Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+
+</head>
+
+<body>
+    
+    <section class="hero">
+        <header>
+            <a href="" class="logo"><span>ParenCo</span></a>
+
+            <ul class="navbar">
+                <li><a href="index.html">Familiar</a></li>
+                <li><a href="maestros.html">Maestros</a></li>
+                <li class="active"><a href="administrador.html">Administrador</a></li>
+            </ul>
+
+            <div class="main">
+                <button class="btn"><i class="fa-solid fa-right-to-bracket"></i>Login</button>
+                <div class="bx bx-menu" id="menu-icon"></div>
+            </div>
+
+        </header>
+        <div class="content">
+                <div class="main-text">
+                    <h3>Administrador</h3>
+                    <h1>Control Parental</h1>
+                    <p>Actualiza informacion acerca de la base de datos de modo que
+                        controles la informacion para maestros.
+                    </p>
+                    <a href="" class="cta"><i class="fa-solid fa-globe"></i>  UPBC</a>
+                </div>
+
+                <div class="social">
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-youtube fa-beat"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                </div>
+
+                <div class="image" style="margin-right: 90px;">
+                    <img src="img/img7.png" alt="">
+                </div>
+            </div>
+
+    </section>
+    <div class="wrapper">
+            <div class="wrapp">
+                <span class="icon-close">
+                    <ion-icon name="close"></ion-icon>
+                </span>
+                <div class="form-box login">
+                    <h2>Login</h2>
+                    <form action="" method="post">
+                        <div class="input-box">
+                            <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                            <input type="email" required name="usuario">
+                            <label>Email</label>
+                        </div>
+                        <div class="input-box">
+                            <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                            <input type="password" required name="password">
+                            <label>Password</label>
+                        </div>
+                        <?php include 'includes/control.php'; ?>
+                        <button type="submit" name="btnLoginA" class="btnl">Login</button>
+                        
+                    </form>
+                </div>
+            </div>
+    </div>
+    <script src="script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
